@@ -59,19 +59,19 @@ findHighRisk()
 
 func agentTotals() {
     for agent in agentArray {
- //   if agent.accessLevel < 0 {
+    if agent.accessLevel < 0 {
         switch agent.accessLevel {
             case 1...4:
                 print(agent.accessLevel)
             case 5...7:
                 print(agent.accessLevel)
-            case 8...100:
+            case 8...10:
                 print(agent.accessLevel)
             default:
                 print("NOT CLASSIFIED")
             }
-        }
+        }; print(agent.accessLevel)
     }
-//}
+}
 
 agentTotals()
